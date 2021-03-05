@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+
+
+body {
+    background-color: peachpuff;
+    margin:0;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color:#555555;
+    background-image:url("image.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+h1 {
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-transform: uppercase;
+    letter-spacing:3px;
+    font-size: 50px;
+    font-weight: 700;
+    background-color: rgba(0,0,0,0.5);
+    padding:10px 25px;
+}
+
+.nav {
+    width:100%;
+    height:80px;
+    background-color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+    z-index:10;
+}
+
+.nav ul {
+    margin:15;
+    padding:10;
+    list-style-type:none;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left:25px;
+    margin-right:25px;
+    line-height:80px;
+    font-size: 12px;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing: 2px;
+    color: #555555;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.roll {
+    width:0%;
+    height:3px;
+    background-color: peachpuff;
+    margin-top: -25px;
+    transition: all ease-in-out 0.3s;
+    margin-left: 50%;
+    transform: translateX(-50%)
+    color: #555555;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.roll button:hover {
+    background-color: #1150ab;
+}
+
+.container {
+    width: 1000px;
+    margin:auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.info {
+    width:180px;
+    min-height: 200px;
+    background-color: #77b5fe;
+    float:left;
+    margin-right: 40px;
+    border-radius: 8px;
+    padding:20px;
+    text-align:center;
+}
+
+.info:nth-child(4) {
+    margin-right:0;
+}
+
+.info h3 {
+    font-size:18px;
+    color: peachpuff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info p {
+    color: white;
+    font-size:16px;
+}
+
+.info button {
+    padding: 10px 25px;
+    background-color: #1F65CA;
+    border: 10px;
+    border-color: peachpuff;
+    outline: 0;
+    text-transform: uppercase;
+    color: peachpuff;
+    font-weight:700;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s
+}
+
+.info button:hover {
+    background-color: #1150ab;
+}
+
+.clear {
+    clear:both;
+}
+
+.altbg {
+    background-color:#FFFFFF;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #333333;
+}
+
+.photo {
+    width: 460px;
+    height: 250px;
+    background-color:#555555;
+    float:left;
+    background-image: url(image1.jpg);
+    background-size: 100%;
+    background-position: center center;
+    margin-top:50px;
+    transition: all ease-in-out 0.3s;
+    position:relative;
+    overflow:hidden;
+    cursor: pointer;
+}
+
+.photo+.photo {
+    float:right;
+    background-image: url(image2.png);
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.photo:hover {
+	background-size:120%;
+}
+
+.photo h3 {
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    text-align:center;
+    padding: 10px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    margin: 0;
+    transform: translateY(100%);
+    transition: all ease-in-out 0.3s;
+}
+
+.photo:hover h3 {
+	transform:translateY(0%);
+}
+
+.gallery {
+	padding:0;
+}
+.gallery li {
+	list-style-type:none;
+	width:33.2%;
+    height:185px;
+    background-color: black;
+	float:left;
+	margin-right:0.2%;
+	margin-bottom:2px;
+	overflow:hidden;
+	position:relative;
+}
+.gallery img {
+	width:100%;
+	opacity:0.8;
+}
+
+.gallery li:nth-child(3n) {
+	margin-right:0;
+}
+
+.gallery li div {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+    height:98%;
+    background-color:rgba(0,0,0,0.5);
+	transform:translateY(-100%);
+	transition:all ease-in-out 0.3s;
+}
+
+.gallery li:hover div {
+	transform:translateY(0);
+}
+
+.gallery li div p {
+	padding:0px 18px;
+	margin-top:20px;
+	color:white;
+	font-weight:700;
+	font-size:14px;
+	text-transform:uppercase;
+}
+.gallery li div .date {
+	font-weight:400;
+	font-size:12px;
+}
+
+.gallery li div p {
+	padding:0px 18px;
+	margin-top:20px;
+	color:white;
+	font-weight:700;
+	font-size:14px;
+	text-transform:uppercase;
+	opacity:0;
+	transition:0.3s all ease-in-out 0.3s;
+}
+
+.gallery li:hover div p {
+	opacity:1;
+}
+
+.about {
+	margin-top: 50px;
+    color: #000000;
+    text-align: center;
+}
+
+.contact {
+	width:45%;
+	display:inline-block;
+}
+
+.contact input, textarea, select {
+	display:block;
+	width:100%;
+	margin:10px 0;
+	padding:10px;
+	border-radius:6px;
+	border:1px solid #CCC;
+	outline:0;
+	color:#333333;
+	background-color:white;
+	font-family:"Lato", sans serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+	display:block;
+	width:100%;
+	margin:10px 0;
+	padding:10px;
+	border-radius:6px;
+	border:1px solid #CCC;
+	outline:0;
+	color:#333333;
+	background-color:white;
+	font-family:"Lato", sans serif;
+}
+
+input[type="submit"] {
+    width: auto !important;
+    margin-top: 30px !important;
+    background-color: #555 !important;
+    color: white !important;
+    font-weight: 700;
+    padding: 10px 25px !important;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+iframe {
+	width: 50%;
+    float: right;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:1000px) {
+	.nav ul {
+		display:none;
+	}
+	h1 {
+		text-align:center;
+		font-size:40px;
+	}
+    .container {
+        width:98%;
+        margin:0 1%;
+    }
+    .info {
+        width:calc(48% - 40px);
+        margin-right:4%;
+        margin-bottom:10px;
+    }
+    .info:nth-child(2n) {
+        margin-right:0;
+    }
+    .photo {
+        width: 46%;
+        height: 170px;
+    }
+    .photo h3 {
+        transform:translateY(0);
+    }
+	.gallery li {
+	   height:100px;
+    }
+    form, iframe {
+    float: none;
+    width: 100%;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+	.info {
+		width:calc(100% - 40px);
+	}
+    .photo {
+        width: 100%;
+    }
+    .gallery li {
+        width:49.9%;
+    }
+    .gallery li:nth-child(3n) {
+        margin-right:0.2%;
+    }
+    .gallery li:nth-child(2n) {
+        margin-right:0;
+    }
+
+}
